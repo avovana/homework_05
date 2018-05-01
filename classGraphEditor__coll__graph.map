@@ -1,0 +1,8 @@
+<map id="GraphEditor" name="GraphEditor">
+<area shape="rect" id="node2" href="$classCanvas.html" title="{Canvas\n|&#45; brushWidth\l|+ Canvas()\l+ drawLine()\l+ drawCircle()\l+ deleteLast()\l+ exportToFile()\l+ importFromFile()\l}" alt="" coords="211,665,340,815"/>
+<area shape="rect" id="node5" href="$classGraphObj.html" title="{GraphObj\n||+ draw()\l+ ~GraphObj()\l}" alt="" coords="5,147,109,239"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="134,155,273,232"/>
+<area shape="rect" id="node8" title="STL class. " alt="" coords="254,264,369,341"/>
+<area shape="rect" id="node9" title="STL class. " alt="" coords="384,701,463,779"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="366,507,492,599"/>
+</map>

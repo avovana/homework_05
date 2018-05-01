@@ -1,0 +1,4 @@
+<map id="GraphObj" name="GraphObj">
+<area shape="rect" id="node2" href="$classCircle.html" title="{Circle\n|&#45; centr\l&#45; radius\l|+ Circle()\l+ ~Circle()\l+ draw()\l}" alt="" coords="5,154,88,275"/>
+<area shape="rect" id="node3" href="$classLine.html" title="{Line\n|&#45; from\l&#45; to\l&#45; width\l|+ Line()\l+ ~Line()\l+ draw()\l}" alt="" coords="113,147,187,283"/>
+</map>
