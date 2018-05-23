@@ -8,9 +8,9 @@ endif()
 
 message(STATUS "VERSION_BUILD: " ${VERSION_BUILD})
 
-find_package(Boost COMPONENTS unit_test_framework REQUIRED)
-
 project(graph_editor_pkg VERSION 0.0.${VERSION_BUILD})
+
+find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
 set(SOURCE_PATH "${PROJECT_SOURCE_DIR}/src")
 

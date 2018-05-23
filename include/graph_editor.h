@@ -27,9 +27,9 @@ public:
         canvas.drawLine(from, to);
     }
 
-    void drawCircle(Coord radius)
+    void drawCircle(Coord coord, size_t radius)
     {
-        canvas.drawCircle(radius);
+        canvas.drawCircle(coord, radius);
     }
 
     void deleteLast()
