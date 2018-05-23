@@ -50,4 +50,4 @@ include (CPack)
 
 enable_testing()
 
-add_test(tests allocator_test_main)
+add_test(tests test_main)
