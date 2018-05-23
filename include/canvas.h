@@ -14,9 +14,9 @@ public:
         objects.back()->draw();
     }
     
-    void drawCircle(Coord radius)
+    void drawCircle(Coord coord, size_t radius)
     {
-        objects.push_back(std::make_unique<Circle>(radius, brushWidth));
+        objects.push_back(std::make_unique<Circle>(coord, radius));
         objects.back()->draw();        
     }
     

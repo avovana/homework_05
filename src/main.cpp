@@ -7,7 +7,7 @@ int main()
 	{	
 		GraphEditor editor("new project");
 		editor.drawLine({1,3}, {2,4});
-		editor.drawCircle({5, 7});
+		editor.drawCircle({5, 7}, 8);
 		editor.deleteLast();
 		
 		editor.exportToFile("filePath");

@@ -8,21 +8,32 @@ endif()
 
 message(STATUS "VERSION_BUILD: " ${VERSION_BUILD})
 
+find_package(Boost COMPONENTS unit_test_framework REQUIRED)
+
 project(graph_editor_pkg VERSION 0.0.${VERSION_BUILD})
 
 set(SOURCE_PATH "${PROJECT_SOURCE_DIR}/src")
 
 add_executable(graph_editor ${SOURCE_PATH}/main.cpp)
 
+add_executable(test_main ${PROJECT_SOURCE_DIR}/tests/test_main.cpp)
+
 target_include_directories(graph_editor PRIVATE include)
+target_include_directories(test_main PRIVATE include)
 
 set_target_properties(
   graph_editor
+  test_main
 
   PROPERTIES
     CXX_STANDARD 14
     CXX_STANDARD_REQUIRED ON
     COMPILE_OPTIONS -Wpedantic -Wall -Wextra
+)
+
+target_compile_definitions(test_main PRIVATE BOOST_TEST_DYN_LINK)
+target_link_libraries(test_main
+  Boost::unit_test_framework
 )
 
 install(TARGETS graph_editor RUNTIME DESTINATION bin)
@@ -36,3 +47,7 @@ set(CPACK_PACKAGE_VERSION_PATCH "${PROJECT_VERSION_PATCH}")
 set(CPACK_PACKAGE_CONTACT vladimir.englisbox@gmail.com)
 
 include (CPack)
+
+enable_testing()
+
+add_test(tests allocator_test_main)
