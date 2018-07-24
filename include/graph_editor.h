@@ -1,46 +1,58 @@
 #pragma once
 
+#include "object.h"
+#include "view.h"
+#include "model.h"
+
 #include <vector>
 #include <string>
 
-#include "graph_object.h"
-#include "canvas.h"
-
 class GraphEditor
 {
-public:
-    explicit GraphEditor (const std::string & name_) : projectName{name_}
-    { }
+    public:
+    explicit GraphEditor(const std::string & name_) : projectName{ name_ }
+    {
+        model = new MyModel();
+        canvas = new MyView();
+        canvas->setModel(model);
+    }
+
+    ~GraphEditor()
+    {
+        delete model;
+        delete canvas;
+    }
 
     void importFromFile(std::string filePath)
     {
-        canvas.importFromFile(filePath);
+
     }
 
     void exportToFile(std::string filePath)
     {
-        canvas.exportToFile(filePath);
+
     }
 
     void drawLine(Coord from, Coord to)
     {
-        canvas.drawLine(from, to);
+        model->addElement(std::make_unique<Line>(from, to, 555));
     }
 
     void drawCircle(Coord coord, size_t radius)
     {
-        canvas.drawCircle(coord, radius);
+        model->addElement(std::make_unique<Circle>(coord, radius));
     }
 
     void deleteLast()
     {
-        canvas.deleteLast();
+        model->deleteLast();
     }
-    
+
 private:
     std::string projectName{""};
-    Canvas canvas;
-    
+    MyView* canvas;
+    AbstractModel* model;
+
     GraphEditor (const GraphEditor&) = delete;
     GraphEditor& operator=(const GraphEditor&) = delete;
 };
