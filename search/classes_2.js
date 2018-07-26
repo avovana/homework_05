@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['line',['Line',['../classLine.html',1,'']]]
+  ['grapheditor',['GraphEditor',['../classGraphEditor.html',1,'']]],
+  ['graphobj',['GraphObj',['../classGraphObj.html',1,'']]]
 ];

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['brushwidth',['brushWidth',['../classCanvas.html#a250db443493f06ec9a00fb4bf80ed5b9',1,'Canvas']]]
+  ['abstractmodel',['AbstractModel',['../classAbstractModel.html',1,'']]],
+  ['abstractview',['AbstractView',['../classAbstractView.html',1,'']]],
+  ['addelement',['addElement',['../classAbstractModel.html#a7e58bc186eb00ccdb2a8be2bae99420a',1,'AbstractModel::addElement()'],['../classMyModel.html#a46f943a41fec8ac22b2577b9c8ea2e16',1,'MyModel::addElement()']]]
 ];

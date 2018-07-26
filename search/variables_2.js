@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['from',['from',['../classLine.html#a3bf53cede0e28aaa9495d0864a6c4151',1,'Line']]]
+  ['model',['model',['../classGraphEditor.html#a4840c87dbdf171efa657810ccd236f02',1,'GraphEditor::model()'],['../classMyView.html#a1e604061a3dda356e1dfdba2273e2678',1,'MyView::model()']]]
 ];

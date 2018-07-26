@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['importfromfile',['importFromFile',['../classCanvas.html#ab47565e2a158164ec3481cc7bd89b6ce',1,'Canvas::importFromFile()'],['../classGraphEditor.html#a97841adb8ca1609c3bd7c03d37ae77b5',1,'GraphEditor::importFromFile()']]]
+  ['grapheditor',['GraphEditor',['../classGraphEditor.html#a1ab919b32af4608931ff3b1e9ba15f45',1,'GraphEditor::GraphEditor(const std::string &amp;name_)'],['../classGraphEditor.html#a1f2dd2c86cbb8736d5748e560269d809',1,'GraphEditor::GraphEditor(const GraphEditor &amp;)=delete']]]
 ];

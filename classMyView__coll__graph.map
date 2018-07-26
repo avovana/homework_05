@@ -1,0 +1,7 @@
+<map id="MyView" name="MyView">
+<area shape="rect" id="node2" href="$classAbstractView.html" title="{AbstractView\n||+ setModel()\l+ drawElements()\l}" alt="" coords="44,686,169,778"/>
+<area shape="rect" id="node3" href="$classAbstractModel.html" title="{AbstractModel\n||+ addElement()\l+ deleteLast()\l+ subscribe()\l+ notify()\l+ ~AbstractModel()\l}" alt="" coords="194,664,328,800"/>
+<area shape="rect" id="node6" href="$classGraphObj.html" title="{GraphObj\n||+ draw()\l+ ~GraphObj()\l}" alt="" coords="5,147,109,239"/>
+<area shape="rect" id="node7" title="STL class. " alt="" coords="134,155,273,232"/>
+<area shape="rect" id="node9" title="STL class. " alt="" coords="254,264,369,341"/>
+</map>

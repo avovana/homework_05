@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['canvas_2eh',['canvas.h',['../canvas_8h.html',1,'']]]
+  ['graph_5feditor_2eh',['graph_editor.h',['../graph__editor_8h.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['to',['to',['../classLine.html#a63d7abd7e585a2dd54683e33e6931df4',1,'Line']]]
+  ['subs',['subs',['../classMyModel.html#ac46ccaadb0fcebf7aaee7738ba39b875',1,'MyModel']]]
 ];

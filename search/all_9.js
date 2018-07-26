@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['objects',['objects',['../classCanvas.html#ac6f6d4a0e693f0b8e8b046735f5f146e',1,'Canvas']]],
-  ['operator_3d',['operator=',['../classGraphEditor.html#a13597b9210e1be59e3f8e97f6ac6a067',1,'GraphEditor']]]
+  ['notify',['notify',['../classAbstractModel.html#aceb0dbfa5d82c44b5f65c05d0b08465f',1,'AbstractModel::notify()'],['../classMyModel.html#a853bd817017e87f8577279a5f1c8a485',1,'MyModel::notify()']]]
 ];

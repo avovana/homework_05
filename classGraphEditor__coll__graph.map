@@ -1,8 +1,10 @@
 <map id="GraphEditor" name="GraphEditor">
-<area shape="rect" id="node2" href="$classCanvas.html" title="{Canvas\n|&#45; brushWidth\l|+ Canvas()\l+ drawLine()\l+ drawCircle()\l+ deleteLast()\l+ exportToFile()\l+ importFromFile()\l}" alt="" coords="211,665,340,815"/>
-<area shape="rect" id="node5" href="$classGraphObj.html" title="{GraphObj\n||+ draw()\l+ ~GraphObj()\l}" alt="" coords="5,147,109,239"/>
-<area shape="rect" id="node6" title="STL class. " alt="" coords="134,155,273,232"/>
-<area shape="rect" id="node8" title="STL class. " alt="" coords="254,264,369,341"/>
-<area shape="rect" id="node9" title="STL class. " alt="" coords="384,701,463,779"/>
-<area shape="rect" id="node10" title="STL class. " alt="" coords="366,507,492,599"/>
+<area shape="rect" id="node2" title="STL class. " alt="" coords="51,872,129,949"/>
+<area shape="rect" id="node3" title="STL class. " alt="" coords="5,686,131,778"/>
+<area shape="rect" id="node4" href="$classAbstractModel.html" title="{AbstractModel\n||+ addElement()\l+ deleteLast()\l+ subscribe()\l+ notify()\l+ ~AbstractModel()\l}" alt="" coords="306,664,440,800"/>
+<area shape="rect" id="node11" href="$classMyView.html" title="{MyView\n||+ setModel()\l+ drawElements()\l}" alt="" coords="177,865,303,957"/>
+<area shape="rect" id="node7" href="$classGraphObj.html" title="{GraphObj\n||+ draw()\l+ ~GraphObj()\l}" alt="" coords="117,147,221,239"/>
+<area shape="rect" id="node8" title="STL class. " alt="" coords="246,155,385,232"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="366,264,481,341"/>
+<area shape="rect" id="node12" href="$classAbstractView.html" title="{AbstractView\n||+ setModel()\l+ drawElements()\l}" alt="" coords="156,686,281,778"/>
 </map>
