@@ -7,6 +7,8 @@
 #include <vector>
 #include <string>
 
+enum class Event {drawLine, drawCircle, deleteLast, importFromFile, exportToFile, quit};
+
 class GraphEditor
 {
     public:
@@ -23,6 +25,50 @@ class GraphEditor
         delete canvas;
     }
 
+    void proceed(std::queue<Event> events)
+    {
+        bool quit{ false };
+
+        while (!events.empty() && !quit)
+        {
+            auto event = events.front();
+            events.pop();
+            std::cout << "Command" << '\n';
+
+            switch (event)
+            {
+                case Event::drawLine:
+                    drawLine({ 1,3 }, { 2,4 });
+                    break;
+
+                case Event::drawCircle:
+                    drawCircle({ 5, 7 }, 8);
+                    break;
+
+                case Event::deleteLast:
+                    deleteLast();
+                    break;
+
+                case Event::importFromFile:
+                    importFromFile("filePath");
+                    break;
+
+                case Event::exportToFile:
+                    exportToFile("filePath");
+                    break;
+
+                case Event::quit:
+                    quit = true;
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+    }
+
+    private:
     void importFromFile(std::string filePath)
     {
 
@@ -48,7 +94,6 @@ class GraphEditor
         model->deleteLast();
     }
 
-private:
     std::string projectName{""};
     MyView* canvas;
     AbstractModel* model;
