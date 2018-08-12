@@ -6,6 +6,7 @@
 
 #include <vector>
 #include <string>
+#include <memory>
 
 enum class Event {drawLine, drawCircle, deleteLast, importFromFile, exportToFile, quit};
 
@@ -14,15 +15,9 @@ class GraphEditor
     public:
     explicit GraphEditor(const std::string & name_) : projectName{ name_ }
     {
-        model = new MyModel();
-        canvas = new MyView();
+        model = std::make_shared<MyModel>();
+        canvas = std::make_unique<MyView>();
         canvas->setModel(model);
-    }
-
-    ~GraphEditor()
-    {
-        delete model;
-        delete canvas;
     }
 
     void proceed(std::queue<Event> events)
@@ -80,8 +75,8 @@ class GraphEditor
     }
 
     std::string projectName{""};
-    MyView* canvas;
-    AbstractModel* model;
+    std::unique_ptr<MyView> canvas;
+    std::shared_ptr<AbstractModel> model;
 
     GraphEditor (const GraphEditor&) = delete;
     GraphEditor& operator=(const GraphEditor&) = delete;

@@ -1,7 +1,7 @@
 #include "view.h"
 #include "model.h"
 
-void MyView::setModel(AbstractModel* model_) {
+void MyView::setModel(std::shared_ptr<AbstractModel> model_) {
 	model = model_;
 	model->subscribe(this);
 }

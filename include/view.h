@@ -1,4 +1,6 @@
 #pragma once
+#include <memory>
+
 #include "painter.h"
 
 class AbstractModel;
@@ -6,16 +8,16 @@ class MyModel;
 
 class AbstractView {
 public:
-	virtual void setModel(AbstractModel*) = 0;
+	virtual void setModel(std::shared_ptr<AbstractModel>) = 0;
 	virtual void drawElements() = 0;
 };
 
 class MyView : AbstractView {
 public:
-	void setModel(AbstractModel* model_) override;
+	void setModel(std::shared_ptr<AbstractModel> model) override;
 	void drawElements() override;
 
 private:
-	AbstractModel * model;
+	std::shared_ptr<AbstractModel> model;
 	Painter painter;
 };
