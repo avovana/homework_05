@@ -1,6 +1,6 @@
 #pragma once
 
-#include "object.h"
+#include "graph_object.h"
 #include "view.h"
 #include "model.h"
 
@@ -38,15 +38,15 @@ class GraphEditor
             switch (event)
             {
                 case Event::drawLine:
-                    drawLine({ 1,3 }, { 2,4 });
+                    model->addElement(std::make_unique<Line>(Coord{1,1}, Coord{2,2}, 555));
                     break;
 
                 case Event::drawCircle:
-                    drawCircle({ 5, 7 }, 8);
+                    model->addElement(std::make_unique<Circle>(Coord{5,5}, 5));
                     break;
 
                 case Event::deleteLast:
-                    deleteLast();
+                    model->deleteLast();
                     break;
 
                 case Event::importFromFile:
@@ -77,21 +77,6 @@ class GraphEditor
     void exportToFile(std::string filePath)
     {
 
-    }
-
-    void drawLine(Coord from, Coord to)
-    {
-        model->addElement(std::make_unique<Line>(from, to, 555));
-    }
-
-    void drawCircle(Coord coord, size_t radius)
-    {
-        model->addElement(std::make_unique<Circle>(coord, radius));
-    }
-
-    void deleteLast()
-    {
-        model->deleteLast();
     }
 
     std::string projectName{""};
