@@ -1,6 +1,6 @@
 #pragma once
 
-#include "object.h"
+#include "graph_object.h"
 
 #include <memory>
 #include <vector>

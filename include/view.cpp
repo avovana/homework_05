@@ -8,6 +8,6 @@ void MyView::setModel(AbstractModel* model_) {
 
 void MyView::drawElements() {
 	for (auto& obj : model->objects) {
-		obj->draw();
+		obj->draw(&painter);
 	}
 }
