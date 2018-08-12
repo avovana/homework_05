@@ -22,3 +22,7 @@ void MyModel::notify() {
 	for (auto sub : subs)
 		sub->drawElements();
 }
+
+MyModel::ObjectsType MyModel::getObjects() {
+	return objects;
+}

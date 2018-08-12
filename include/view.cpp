@@ -7,7 +7,8 @@ void MyView::setModel(AbstractModel* model_) {
 }
 
 void MyView::drawElements() {
-	for (auto& obj : model->objects) {
-		obj->draw(&painter);
+
+	for (auto& obj : model->getObjects()) {
+		obj->drawBy(&painter);
 	}
 }
