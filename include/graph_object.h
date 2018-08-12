@@ -42,7 +42,7 @@ public:
 	Coord to;
 	size_t width;
 
-	Line(Coord from_, Coord to_, size_t width_);
+	Line(Coord from_, Coord to_);
 	~Line() override;
 
 	void drawBy(Painter*) override;

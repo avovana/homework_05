@@ -16,8 +16,8 @@ void Circle::drawBy(Painter* painter)
 	painter->draw(this);
 }
 
-Line::Line(Coord from_, Coord to_, size_t width_) 
-	: from{ from_ }, to{ to_ }, width{ width_ }
+Line::Line(Coord from_, Coord to_)
+	: from{ from_ }, to{ to_ }
 { };
 
 void Line::drawBy(Painter* painter)

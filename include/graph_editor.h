@@ -38,7 +38,7 @@ class GraphEditor
             switch (event)
             {
                 case Event::drawLine:
-                    model->addElement(std::make_unique<Line>(Coord{1,1}, Coord{2,2}, 555));
+                    model->addElement(std::make_unique<Line>(Coord{1,1}, Coord{2,2}));
                     break;
 
                 case Event::drawCircle:
