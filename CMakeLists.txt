@@ -17,7 +17,9 @@ set(SOURCE_PATH "${PROJECT_SOURCE_DIR}/src")
 add_executable(graph_editor
 ${SOURCE_PATH}/main.cpp
 ${PROJECT_SOURCE_DIR}/include/view.cpp
-${PROJECT_SOURCE_DIR}/include/model.cpp)
+${PROJECT_SOURCE_DIR}/include/model.cpp
+${PROJECT_SOURCE_DIR}/include/graph_object.cpp
+${PROJECT_SOURCE_DIR}/include/painter.cpp)
 
 add_executable(test_main ${PROJECT_SOURCE_DIR}/tests/test_main.cpp)
 
