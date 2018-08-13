@@ -24,6 +24,6 @@ void MyModel::notify() {
 			sub->drawElements();
 }
 
-MyModel::ObjectsType MyModel::getObjects() {
+const MyModel::ObjectsType& MyModel::getObjects() {
 	return objects;
 }

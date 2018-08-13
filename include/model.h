@@ -9,7 +9,7 @@ class AbstractView;
 
 class AbstractModel {
 public:
-	using ObjectsType = std::vector< std::shared_ptr<GraphObj> >;
+	using ObjectsType = std::vector< std::unique_ptr<GraphObj> >;
 	using Subscribers = std::vector< std::weak_ptr<AbstractView> >;
 
 	virtual void addElement(std::unique_ptr<GraphObj>) = 0;
@@ -17,7 +17,7 @@ public:
 	virtual void subscribe(std::weak_ptr<AbstractView>) = 0;
 	virtual void notify() = 0;
 	virtual ~AbstractModel() {};
-	virtual ObjectsType getObjects() = 0;
+	virtual const ObjectsType& getObjects() = 0;
 };
 
 class MyModel : public AbstractModel {
@@ -26,7 +26,7 @@ public:
 	void deleteLast() override;
 	void subscribe(std::weak_ptr<AbstractView> view) override;
 	void notify() override;
-	ObjectsType getObjects() override;
+	const ObjectsType& getObjects() override;
 
 private:
 	Subscribers subs;
