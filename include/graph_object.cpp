@@ -18,7 +18,7 @@ void Circle::drawBy(Painter* painter)
 
 Line::Line(Coord from_, Coord to_)
 	: from{ from_ }, to{ to_ }
-{ };
+{ }
 
 void Line::drawBy(Painter* painter)
 {

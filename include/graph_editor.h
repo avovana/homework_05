@@ -7,6 +7,7 @@
 #include <vector>
 #include <string>
 #include <memory>
+#include <queue>
 
 enum class Event {drawLine, drawCircle, deleteLast, importFromFile, exportToFile, quit};
 
