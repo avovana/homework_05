@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,8 +82,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classAbstractModel-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AbstractModel Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -96,35 +96,63 @@ Inheritance diagram for AbstractModel:</div>
 <div class="dyncontent">
 <div class="center"><img src="classAbstractModel__inherit__graph.png" border="0" usemap="#AbstractModel_inherit__map" alt="Inheritance graph"/></div>
 <map name="AbstractModel_inherit__map" id="AbstractModel_inherit__map">
-<area shape="rect" id="node2" href="classMyModel.html" title="{MyModel\n|+ subs\l|+ addElement()\l+ deleteLast()\l+ subscribe()\l+ notify()\l}" alt="" coords="17,190,127,311"/></map>
+<area shape="rect" id="node2" href="classMyModel.html" title="{MyModel\n|&#45; subs\l&#45; objects\l|+ addElement()\l+ deleteLast()\l+ subscribe()\l+ notify()\l+ getObjects()\l}" alt="" coords="17,206,127,357"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for AbstractModel:</div>
 <div class="dyncontent">
 <div class="center"><img src="classAbstractModel__coll__graph.png" border="0" usemap="#AbstractModel_coll__map" alt="Collaboration graph"/></div>
 <map name="AbstractModel_coll__map" id="AbstractModel_coll__map">
-<area shape="rect" id="node4" href="classGraphObj.html" title="{GraphObj\n||+ draw()\l+ ~GraphObj()\l}" alt="" coords="5,147,109,239"/><area shape="rect" id="node5" title="STL class. " alt="" coords="134,155,273,232"/><area shape="rect" id="node7" title="STL class. " alt="" coords="254,264,369,341"/></map>
+</map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a75c12f3957dd5cd9e01fddc95b6268b0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractModel.html#a75c12f3957dd5cd9e01fddc95b6268b0">ObjectsType</a> = std::vector&lt; std::unique_ptr&lt; <a class="el" href="classGraphObj.html">GraphObj</a> &gt; &gt;</td></tr>
+<tr class="separator:a75c12f3957dd5cd9e01fddc95b6268b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9028decb33276349dd71f0af2c63b7a9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractModel.html#a9028decb33276349dd71f0af2c63b7a9">Subscribers</a> = std::vector&lt; std::weak_ptr&lt; <a class="el" href="classAbstractView.html">AbstractView</a> &gt; &gt;</td></tr>
+<tr class="separator:a9028decb33276349dd71f0af2c63b7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7e58bc186eb00ccdb2a8be2bae99420a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractModel.html#a7e58bc186eb00ccdb2a8be2bae99420a">addElement</a> (std::unique_ptr&lt; <a class="el" href="classGraphObj.html">GraphObj</a> &gt;)=0</td></tr>
 <tr class="separator:a7e58bc186eb00ccdb2a8be2bae99420a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7a9b9fa38c0204f0a6588830141b7a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractModel.html#aa7a9b9fa38c0204f0a6588830141b7a4">deleteLast</a> ()=0</td></tr>
 <tr class="separator:aa7a9b9fa38c0204f0a6588830141b7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb38403bca6700773e5ecb3361823849"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractModel.html#abb38403bca6700773e5ecb3361823849">subscribe</a> (<a class="el" href="classAbstractView.html">AbstractView</a> *)=0</td></tr>
-<tr class="separator:abb38403bca6700773e5ecb3361823849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17ba231eb520a479f7320c229fe94cf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractModel.html#aa17ba231eb520a479f7320c229fe94cf">subscribe</a> (std::weak_ptr&lt; <a class="el" href="classAbstractView.html">AbstractView</a> &gt;)=0</td></tr>
+<tr class="separator:aa17ba231eb520a479f7320c229fe94cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceb0dbfa5d82c44b5f65c05d0b08465f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractModel.html#aceb0dbfa5d82c44b5f65c05d0b08465f">notify</a> ()=0</td></tr>
 <tr class="separator:aceb0dbfa5d82c44b5f65c05d0b08465f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac60bc3fdb72701a5ef2b7bcc867f9870"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractModel.html#ac60bc3fdb72701a5ef2b7bcc867f9870">~AbstractModel</a> ()</td></tr>
 <tr class="separator:ac60bc3fdb72701a5ef2b7bcc867f9870"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a6eaf503507a4acb97eb3ae7e10bfd6b3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr<br class="typebreak"/>
-&lt; <a class="el" href="classGraphObj.html">GraphObj</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractModel.html#a6eaf503507a4acb97eb3ae7e10bfd6b3">objects</a></td></tr>
-<tr class="separator:a6eaf503507a4acb97eb3ae7e10bfd6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b5322350a9f5a7bd2ef9d9a04deef0a"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classAbstractModel.html#a75c12f3957dd5cd9e01fddc95b6268b0">ObjectsType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractModel.html#a2b5322350a9f5a7bd2ef9d9a04deef0a">getObjects</a> ()=0</td></tr>
+<tr class="separator:a2b5322350a9f5a7bd2ef9d9a04deef0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a75c12f3957dd5cd9e01fddc95b6268b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classAbstractModel.html#a75c12f3957dd5cd9e01fddc95b6268b0">AbstractModel::ObjectsType</a> =  std::vector&lt; std::unique_ptr&lt;<a class="el" href="classGraphObj.html">GraphObj</a>&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9028decb33276349dd71f0af2c63b7a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classAbstractModel.html#a9028decb33276349dd71f0af2c63b7a9">AbstractModel::Subscribers</a> =  std::vector&lt; std::weak_ptr&lt;<a class="el" href="classAbstractView.html">AbstractView</a>&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac60bc3fdb72701a5ef2b7bcc867f9870"></a>
 <div class="memitem">
@@ -174,15 +202,6 @@ Public Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classMyModel.html#a46f943a41fec8ac22b2577b9c8ea2e16">MyModel</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classAbstractModel_a7e58bc186eb00ccdb2a8be2bae99420a_icgraph.png" border="0" usemap="#classAbstractModel_a7e58bc186eb00ccdb2a8be2bae99420a_icgraph" alt=""/></div>
-<map name="classAbstractModel_a7e58bc186eb00ccdb2a8be2bae99420a_icgraph" id="classAbstractModel_a7e58bc186eb00ccdb2a8be2bae99420a_icgraph">
-<area shape="rect" id="node2" href="classGraphEditor.html#a7bba6e5db5e539307ad02192ac961adf" title="GraphEditor::drawLine" alt="" coords="243,5,394,32"/><area shape="rect" id="node4" href="classGraphEditor.html#ab7380a13241c547a1a564e4e2511b5c7" title="GraphEditor::drawCircle" alt="" coords="238,56,399,83"/><area shape="rect" id="node3" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="448,31,499,57"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="aa7a9b9fa38c0204f0a6588830141b7a4"></a>
@@ -208,14 +227,30 @@ Here is the caller graph for this function:</div>
 
 <p>Implemented in <a class="el" href="classMyModel.html#a2f43bff473d2758f040554f411382b6a">MyModel</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classAbstractModel_aa7a9b9fa38c0204f0a6588830141b7a4_icgraph.png" border="0" usemap="#classAbstractModel_aa7a9b9fa38c0204f0a6588830141b7a4_icgraph" alt=""/></div>
-<map name="classAbstractModel_aa7a9b9fa38c0204f0a6588830141b7a4_icgraph" id="classAbstractModel_aa7a9b9fa38c0204f0a6588830141b7a4_icgraph">
-<area shape="rect" id="node2" href="classGraphEditor.html#afb0de65407affd06f2b3ca668b1feb5b" title="GraphEditor::deleteLast" alt="" coords="230,5,389,32"/><area shape="rect" id="node3" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="437,5,488,32"/></map>
 </div>
-</p>
+</div>
+<a class="anchor" id="a2b5322350a9f5a7bd2ef9d9a04deef0a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="classAbstractModel.html#a75c12f3957dd5cd9e01fddc95b6268b0">ObjectsType</a>&amp; AbstractModel::getObjects </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classMyModel.html#a59a4f90159ef0cb32abfd82c2408ff3f">MyModel</a>.</p>
 
 </div>
 </div>
@@ -244,7 +279,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="abb38403bca6700773e5ecb3361823849"></a>
+<a class="anchor" id="aa17ba231eb520a479f7320c229fe94cf"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -254,7 +289,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">virtual void AbstractModel::subscribe </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classAbstractView.html">AbstractView</a> *&#160;</td>
+          <td class="paramtype">std::weak_ptr&lt; <a class="el" href="classAbstractView.html">AbstractView</a> &gt;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -266,29 +301,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classMyModel.html#ac7f68f153d361b437eb2cc02353c4270">MyModel</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classAbstractModel_abb38403bca6700773e5ecb3361823849_icgraph.png" border="0" usemap="#classAbstractModel_abb38403bca6700773e5ecb3361823849_icgraph" alt=""/></div>
-<map name="classAbstractModel_abb38403bca6700773e5ecb3361823849_icgraph" id="classAbstractModel_abb38403bca6700773e5ecb3361823849_icgraph">
-<area shape="rect" id="node2" href="classMyView.html#aa9253127deb17384b6ffe9cbc6680bae" title="MyView::setModel" alt="" coords="224,5,355,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a6eaf503507a4acb97eb3ae7e10bfd6b3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; std::unique_ptr&lt;<a class="el" href="classGraphObj.html">GraphObj</a>&gt; &gt; AbstractModel::objects</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Implemented in <a class="el" href="classMyModel.html#a129e21a5633413c9b1c0a232fb2a7cdb">MyModel</a>.</p>
 
 </div>
 </div>

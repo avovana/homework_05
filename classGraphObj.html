@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,13 +89,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="object_8h_source.html">object.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="graph__object_8h_source.html">graph_object.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for GraphObj:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGraphObj__inherit__graph.png" border="0" usemap="#GraphObj_inherit__map" alt="Inheritance graph"/></div>
 <map name="GraphObj_inherit__map" id="GraphObj_inherit__map">
-<area shape="rect" id="node2" href="classCircle.html" title="{Circle\n|&#45; centr\l&#45; radius\l|+ Circle()\l+ ~Circle()\l+ draw()\l}" alt="" coords="5,154,88,275"/><area shape="rect" id="node3" href="classLine.html" title="{Line\n|&#45; from\l&#45; to\l&#45; width\l|+ Line()\l+ ~Line()\l+ draw()\l}" alt="" coords="113,147,187,283"/></map>
+<area shape="rect" id="node2" href="classCircle.html" title="{Circle\n|+ centr\l+ radius\l|+ Circle()\l+ ~Circle()\l+ drawBy()\l}" alt="" coords="5,154,91,275"/><area shape="rect" id="node3" href="classLine.html" title="{Line\n|+ from\l+ to\l+ width\l|+ Line()\l+ ~Line()\l+ drawBy()\l}" alt="" coords="115,147,201,283"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for GraphObj:</div>
@@ -107,8 +107,8 @@ Collaboration diagram for GraphObj:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abf83388f796abd6f8d3b4c03d3cc10a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphObj.html#abf83388f796abd6f8d3b4c03d3cc10a4">draw</a> () const =0</td></tr>
-<tr class="separator:abf83388f796abd6f8d3b4c03d3cc10a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd9b4355b4298f6bba8ad79f6a4d0e9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphObj.html#a0bd9b4355b4298f6bba8ad79f6a4d0e9">drawBy</a> (<a class="el" href="classPainter.html">Painter</a> *)=0</td></tr>
+<tr class="separator:a0bd9b4355b4298f6bba8ad79f6a4d0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad51cca910df5d015582f98b4dd35ebdb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphObj.html#ad51cca910df5d015582f98b4dd35ebdb">~GraphObj</a> ()=default</td></tr>
 <tr class="separator:ad51cca910df5d015582f98b4dd35ebdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -137,7 +137,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="abf83388f796abd6f8d3b4c03d3cc10a4"></a>
+<a class="anchor" id="a0bd9b4355b4298f6bba8ad79f6a4d0e9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -145,10 +145,11 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void GraphObj::draw </td>
+          <td class="memname">virtual void GraphObj::drawBy </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="classPainter.html">Painter</a> *&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -158,12 +159,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classLine.html#a6051823de2cc2beff4acd72da924fcea">Line</a>, and <a class="el" href="classCircle.html#a3e2fa36112b886c5b9ba23244f40f5c5">Circle</a>.</p>
+<p>Implemented in <a class="el" href="classLine.html#a8ee7e88429ccd8ef518eb5bc40dadddc">Line</a>, and <a class="el" href="classCircle.html#a76dcf5959584f66342376951ce5e6771">Circle</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="object_8h_source.html">object.h</a></li>
+<li>include/<a class="el" href="graph__object_8h_source.html">graph_object.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

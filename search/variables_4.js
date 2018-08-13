@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['projectname',['projectName',['../classGraphEditor.html#a3b5168ff04491fa00c7fbbe96f030337',1,'GraphEditor']]]
+  ['objects',['objects',['../classMyModel.html#a262ad81722a3ba419537cda0b1256aba',1,'MyModel']]]
 ];

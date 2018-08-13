@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['_7eabstractmodel',['~AbstractModel',['../classAbstractModel.html#ac60bc3fdb72701a5ef2b7bcc867f9870',1,'AbstractModel']]],
-  ['_7ecircle',['~Circle',['../classCircle.html#a6385ef0f49f36149893dc0fa5fa27eca',1,'Circle']]],
-  ['_7egrapheditor',['~GraphEditor',['../classGraphEditor.html#a063074d0b285eeaa06f8323c763afa7a',1,'GraphEditor']]],
-  ['_7egraphobj',['~GraphObj',['../classGraphObj.html#ad51cca910df5d015582f98b4dd35ebdb',1,'GraphObj']]],
-  ['_7eline',['~Line',['../classLine.html#af18447238883377a0071d2276a4ac0a5',1,'Line']]]
+  ['setmodel',['setModel',['../classAbstractView.html#ab316ddc9bc04778edfce3860cee6d2e5',1,'AbstractView::setModel()'],['../classMyView.html#a5c1a86840f1b83cf8a170ce08bf67c07',1,'MyView::setModel()']]],
+  ['subscribe',['subscribe',['../classAbstractModel.html#aa17ba231eb520a479f7320c229fe94cf',1,'AbstractModel::subscribe()'],['../classMyModel.html#a129e21a5633413c9b1c0a232fb2a7cdb',1,'MyModel::subscribe()']]]
 ];

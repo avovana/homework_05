@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,30 +88,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="view_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="keyword">class </span><a class="code" href="classAbstractModel.html">AbstractModel</a>;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="classAbstractView.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="classAbstractView.html">AbstractView</a> {</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classAbstractView.html#aa47b338286f4b657164d56ed50c4c9f4">setModel</a>(<a class="code" href="classAbstractModel.html">AbstractModel</a>*) = 0;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classAbstractView.html#af2308a3da39bfa104314324b82c596f2">drawElements</a>() = 0;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;};</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classMyView.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMyView.html">MyView</a> : <a class="code" href="classAbstractView.html">AbstractView</a> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classMyView.html#aa9253127deb17384b6ffe9cbc6680bae">setModel</a>(<a class="code" href="classAbstractModel.html">AbstractModel</a>* model_) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classMyView.html#a29cdfb54e72287854688ae41f58689fc">drawElements</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="painter_8h.html">painter.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="classAbstractModel.html">AbstractModel</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="classMyModel.html">MyModel</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classAbstractView.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classAbstractView.html">AbstractView</a>: <span class="keyword">public</span> std::enable_shared_from_this&lt;AbstractView&gt; {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classAbstractView.html#ab316ddc9bc04778edfce3860cee6d2e5">setModel</a>(std::shared_ptr&lt;AbstractModel&gt;) = 0;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classAbstractView.html#af2308a3da39bfa104314324b82c596f2">drawElements</a>() = 0;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;};</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classMyView.html#a1e604061a3dda356e1dfdba2273e2678">   16</a></span>&#160;  <a class="code" href="classAbstractModel.html">AbstractModel</a> * <a class="code" href="classMyView.html#a1e604061a3dda356e1dfdba2273e2678">model</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
-<div class="ttc" id="classAbstractView_html"><div class="ttname"><a href="classAbstractView.html">AbstractView</a></div><div class="ttdef"><b>Definition:</b> view.h:4</div></div>
-<div class="ttc" id="classMyView_html_a1e604061a3dda356e1dfdba2273e2678"><div class="ttname"><a href="classMyView.html#a1e604061a3dda356e1dfdba2273e2678">MyView::model</a></div><div class="ttdeci">AbstractModel * model</div><div class="ttdef"><b>Definition:</b> view.h:16</div></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classMyView.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMyView.html">MyView</a> : <span class="keyword">public</span> <a class="code" href="classAbstractView.html">AbstractView</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classMyView.html#a5c1a86840f1b83cf8a170ce08bf67c07">setModel</a>(std::shared_ptr&lt;AbstractModel&gt; <a class="code" href="classMyView.html#a7cf50f1d3d42f737169766f0d39ed38e">model</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classMyView.html#a29cdfb54e72287854688ae41f58689fc">drawElements</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classMyView.html#a7cf50f1d3d42f737169766f0d39ed38e">   21</a></span>&#160;  std::shared_ptr&lt;AbstractModel&gt; <a class="code" href="classMyView.html#a7cf50f1d3d42f737169766f0d39ed38e">model</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classMyView.html#a12029bff41115593ec9637ed33d81647">   22</a></span>&#160;  <a class="code" href="classPainter.html">Painter</a> <a class="code" href="classMyView.html#a12029bff41115593ec9637ed33d81647">painter</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="ttc" id="classAbstractView_html"><div class="ttname"><a href="classAbstractView.html">AbstractView</a></div><div class="ttdef"><b>Definition:</b> view.h:9</div></div>
 <div class="ttc" id="classAbstractView_html_af2308a3da39bfa104314324b82c596f2"><div class="ttname"><a href="classAbstractView.html#af2308a3da39bfa104314324b82c596f2">AbstractView::drawElements</a></div><div class="ttdeci">virtual void drawElements()=0</div></div>
-<div class="ttc" id="classMyView_html_a29cdfb54e72287854688ae41f58689fc"><div class="ttname"><a href="classMyView.html#a29cdfb54e72287854688ae41f58689fc">MyView::drawElements</a></div><div class="ttdeci">void drawElements() override</div><div class="ttdef"><b>Definition:</b> view.cpp:9</div></div>
-<div class="ttc" id="classMyView_html_aa9253127deb17384b6ffe9cbc6680bae"><div class="ttname"><a href="classMyView.html#aa9253127deb17384b6ffe9cbc6680bae">MyView::setModel</a></div><div class="ttdeci">void setModel(AbstractModel *model_) override</div><div class="ttdef"><b>Definition:</b> view.cpp:4</div></div>
-<div class="ttc" id="classMyView_html"><div class="ttname"><a href="classMyView.html">MyView</a></div><div class="ttdef"><b>Definition:</b> view.h:10</div></div>
+<div class="ttc" id="classMyView_html_a7cf50f1d3d42f737169766f0d39ed38e"><div class="ttname"><a href="classMyView.html#a7cf50f1d3d42f737169766f0d39ed38e">MyView::model</a></div><div class="ttdeci">std::shared_ptr&lt; AbstractModel &gt; model</div><div class="ttdef"><b>Definition:</b> view.h:21</div></div>
+<div class="ttc" id="classMyView_html_a29cdfb54e72287854688ae41f58689fc"><div class="ttname"><a href="classMyView.html#a29cdfb54e72287854688ae41f58689fc">MyView::drawElements</a></div><div class="ttdeci">void drawElements() override</div><div class="ttdef"><b>Definition:</b> view.cpp:10</div></div>
+<div class="ttc" id="classPainter_html"><div class="ttname"><a href="classPainter.html">Painter</a></div><div class="ttdef"><b>Definition:</b> painter.h:6</div></div>
+<div class="ttc" id="classMyView_html_a12029bff41115593ec9637ed33d81647"><div class="ttname"><a href="classMyView.html#a12029bff41115593ec9637ed33d81647">MyView::painter</a></div><div class="ttdeci">Painter painter</div><div class="ttdef"><b>Definition:</b> view.h:22</div></div>
+<div class="ttc" id="classMyView_html_a5c1a86840f1b83cf8a170ce08bf67c07"><div class="ttname"><a href="classMyView.html#a5c1a86840f1b83cf8a170ce08bf67c07">MyView::setModel</a></div><div class="ttdeci">void setModel(std::shared_ptr&lt; AbstractModel &gt; model) override</div><div class="ttdef"><b>Definition:</b> view.cpp:4</div></div>
+<div class="ttc" id="classMyView_html"><div class="ttname"><a href="classMyView.html">MyView</a></div><div class="ttdef"><b>Definition:</b> view.h:15</div></div>
+<div class="ttc" id="classAbstractView_html_ab316ddc9bc04778edfce3860cee6d2e5"><div class="ttname"><a href="classAbstractView.html#ab316ddc9bc04778edfce3860cee6d2e5">AbstractView::setModel</a></div><div class="ttdeci">virtual void setModel(std::shared_ptr&lt; AbstractModel &gt;)=0</div></div>
 <div class="ttc" id="classAbstractModel_html"><div class="ttname"><a href="classAbstractModel.html">AbstractModel</a></div><div class="ttdef"><b>Definition:</b> model.h:10</div></div>
-<div class="ttc" id="classAbstractView_html_aa47b338286f4b657164d56ed50c4c9f4"><div class="ttname"><a href="classAbstractView.html#aa47b338286f4b657164d56ed50c4c9f4">AbstractView::setModel</a></div><div class="ttdeci">virtual void setModel(AbstractModel *)=0</div></div>
+<div class="ttc" id="painter_8h_html"><div class="ttname"><a href="painter_8h.html">painter.h</a></div></div>
+<div class="ttc" id="classMyModel_html"><div class="ttname"><a href="classMyModel.html">MyModel</a></div><div class="ttdef"><b>Definition:</b> model.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -97,28 +97,22 @@ Collaboration diagram for GraphEditor:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGraphEditor__coll__graph.png" border="0" usemap="#GraphEditor_coll__map" alt="Collaboration graph"/></div>
 <map name="GraphEditor_coll__map" id="GraphEditor_coll__map">
-<area shape="rect" id="node2" title="STL class. " alt="" coords="51,872,129,949"/><area shape="rect" id="node3" title="STL class. " alt="" coords="5,686,131,778"/><area shape="rect" id="node4" href="classAbstractModel.html" title="{AbstractModel\n||+ addElement()\l+ deleteLast()\l+ subscribe()\l+ notify()\l+ ~AbstractModel()\l}" alt="" coords="306,664,440,800"/><area shape="rect" id="node11" href="classMyView.html" title="{MyView\n||+ setModel()\l+ drawElements()\l}" alt="" coords="177,865,303,957"/><area shape="rect" id="node7" href="classGraphObj.html" title="{GraphObj\n||+ draw()\l+ ~GraphObj()\l}" alt="" coords="117,147,221,239"/><area shape="rect" id="node8" title="STL class. " alt="" coords="246,155,385,232"/><area shape="rect" id="node10" title="STL class. " alt="" coords="366,264,481,341"/><area shape="rect" id="node12" href="classAbstractView.html" title="{AbstractView\n||+ setModel()\l+ drawElements()\l}" alt="" coords="156,686,281,778"/></map>
+<area shape="rect" id="node2" title="STL class. " alt="" coords="28,149,107,227"/><area shape="rect" id="node3" title="STL class. " alt="" coords="5,6,131,98"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ab919b32af4608931ff3b1e9ba15f45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphEditor.html#a1ab919b32af4608931ff3b1e9ba15f45">GraphEditor</a> (const std::string &amp;name_)</td></tr>
 <tr class="separator:a1ab919b32af4608931ff3b1e9ba15f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a063074d0b285eeaa06f8323c763afa7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphEditor.html#a063074d0b285eeaa06f8323c763afa7a">~GraphEditor</a> ()</td></tr>
-<tr class="separator:a063074d0b285eeaa06f8323c763afa7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8686d8ba10ca433e6f263cbf9a4a14ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphEditor.html#a8686d8ba10ca433e6f263cbf9a4a14ad">proceed</a> (std::queue&lt; <a class="el" href="graph__editor_8h.html#a5667b805d857c6d28f83f6038a0272d3">Event</a> &gt; events)</td></tr>
+<tr class="separator:a8686d8ba10ca433e6f263cbf9a4a14ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
 <tr class="memitem:a97841adb8ca1609c3bd7c03d37ae77b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphEditor.html#a97841adb8ca1609c3bd7c03d37ae77b5">importFromFile</a> (std::string filePath)</td></tr>
 <tr class="separator:a97841adb8ca1609c3bd7c03d37ae77b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a043906e647ecdc4661bf96c8956cc71b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphEditor.html#a043906e647ecdc4661bf96c8956cc71b">exportToFile</a> (std::string filePath)</td></tr>
 <tr class="separator:a043906e647ecdc4661bf96c8956cc71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bba6e5db5e539307ad02192ac961adf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphEditor.html#a7bba6e5db5e539307ad02192ac961adf">drawLine</a> (<a class="el" href="classCoord.html">Coord</a> from, <a class="el" href="classCoord.html">Coord</a> to)</td></tr>
-<tr class="separator:a7bba6e5db5e539307ad02192ac961adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7380a13241c547a1a564e4e2511b5c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphEditor.html#ab7380a13241c547a1a564e4e2511b5c7">drawCircle</a> (<a class="el" href="classCoord.html">Coord</a> coord, size_t radius)</td></tr>
-<tr class="separator:ab7380a13241c547a1a564e4e2511b5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb0de65407affd06f2b3ca668b1feb5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphEditor.html#afb0de65407affd06f2b3ca668b1feb5b">deleteLast</a> ()</td></tr>
-<tr class="separator:afb0de65407affd06f2b3ca668b1feb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
 <tr class="memitem:a1f2dd2c86cbb8736d5748e560269d809"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphEditor.html#a1f2dd2c86cbb8736d5748e560269d809">GraphEditor</a> (const <a class="el" href="classGraphEditor.html">GraphEditor</a> &amp;)=delete</td></tr>
 <tr class="separator:a1f2dd2c86cbb8736d5748e560269d809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13597b9210e1be59e3f8e97f6ac6a067"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGraphEditor.html">GraphEditor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphEditor.html#a13597b9210e1be59e3f8e97f6ac6a067">operator=</a> (const <a class="el" href="classGraphEditor.html">GraphEditor</a> &amp;)=delete</td></tr>
@@ -128,10 +122,10 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a3b5168ff04491fa00c7fbbe96f030337"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphEditor.html#a3b5168ff04491fa00c7fbbe96f030337">projectName</a> {&quot;&quot;}</td></tr>
 <tr class="separator:a3b5168ff04491fa00c7fbbe96f030337"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ed90e813760d5ea36e6e3f302f381cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMyView.html">MyView</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphEditor.html#a5ed90e813760d5ea36e6e3f302f381cd">canvas</a></td></tr>
-<tr class="separator:a5ed90e813760d5ea36e6e3f302f381cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4840c87dbdf171efa657810ccd236f02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAbstractModel.html">AbstractModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphEditor.html#a4840c87dbdf171efa657810ccd236f02">model</a></td></tr>
-<tr class="separator:a4840c87dbdf171efa657810ccd236f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ebbb608d8ffc1ba3808a7124ca9a22e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classMyView.html">MyView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphEditor.html#a3ebbb608d8ffc1ba3808a7124ca9a22e">canvas</a></td></tr>
+<tr class="separator:a3ebbb608d8ffc1ba3808a7124ca9a22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab665fb6ff7b93862c6db268d280ca95f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classAbstractModel.html">AbstractModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphEditor.html#ab665fb6ff7b93862c6db268d280ca95f">model</a></td></tr>
+<tr class="separator:ab665fb6ff7b93862c6db268d280ca95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1ab919b32af4608931ff3b1e9ba15f45"></a>
@@ -152,29 +146,6 @@ Private Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a063074d0b285eeaa06f8323c763afa7a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">GraphEditor::~GraphEditor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -206,151 +177,6 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="afb0de65407affd06f2b3ca668b1feb5b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GraphEditor::deleteLast </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classGraphEditor_afb0de65407affd06f2b3ca668b1feb5b_cgraph.png" border="0" usemap="#classGraphEditor_afb0de65407affd06f2b3ca668b1feb5b_cgraph" alt=""/></div>
-<map name="classGraphEditor_afb0de65407affd06f2b3ca668b1feb5b_cgraph" id="classGraphEditor_afb0de65407affd06f2b3ca668b1feb5b_cgraph">
-<area shape="rect" id="node2" href="classAbstractModel.html#aa7a9b9fa38c0204f0a6588830141b7a4" title="AbstractModel::deleteLast" alt="" coords="214,5,389,32"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classGraphEditor_afb0de65407affd06f2b3ca668b1feb5b_icgraph.png" border="0" usemap="#classGraphEditor_afb0de65407affd06f2b3ca668b1feb5b_icgraph" alt=""/></div>
-<map name="classGraphEditor_afb0de65407affd06f2b3ca668b1feb5b_icgraph" id="classGraphEditor_afb0de65407affd06f2b3ca668b1feb5b_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="213,5,264,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ab7380a13241c547a1a564e4e2511b5c7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GraphEditor::drawCircle </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCoord.html">Coord</a>&#160;</td>
-          <td class="paramname"><em>coord</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>radius</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classGraphEditor_ab7380a13241c547a1a564e4e2511b5c7_cgraph.png" border="0" usemap="#classGraphEditor_ab7380a13241c547a1a564e4e2511b5c7_cgraph" alt=""/></div>
-<map name="classGraphEditor_ab7380a13241c547a1a564e4e2511b5c7_cgraph" id="classGraphEditor_ab7380a13241c547a1a564e4e2511b5c7_cgraph">
-<area shape="rect" id="node2" href="classAbstractModel.html#a7e58bc186eb00ccdb2a8be2bae99420a" title="AbstractModel::addElement" alt="" coords="217,5,399,32"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classGraphEditor_ab7380a13241c547a1a564e4e2511b5c7_icgraph.png" border="0" usemap="#classGraphEditor_ab7380a13241c547a1a564e4e2511b5c7_icgraph" alt=""/></div>
-<map name="classGraphEditor_ab7380a13241c547a1a564e4e2511b5c7_icgraph" id="classGraphEditor_ab7380a13241c547a1a564e4e2511b5c7_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="216,5,267,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a7bba6e5db5e539307ad02192ac961adf"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GraphEditor::drawLine </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCoord.html">Coord</a>&#160;</td>
-          <td class="paramname"><em>from</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classCoord.html">Coord</a>&#160;</td>
-          <td class="paramname"><em>to</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classGraphEditor_a7bba6e5db5e539307ad02192ac961adf_cgraph.png" border="0" usemap="#classGraphEditor_a7bba6e5db5e539307ad02192ac961adf_cgraph" alt=""/></div>
-<map name="classGraphEditor_a7bba6e5db5e539307ad02192ac961adf_cgraph" id="classGraphEditor_a7bba6e5db5e539307ad02192ac961adf_cgraph">
-<area shape="rect" id="node2" href="classAbstractModel.html#a7e58bc186eb00ccdb2a8be2bae99420a" title="AbstractModel::addElement" alt="" coords="206,5,389,32"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classGraphEditor_a7bba6e5db5e539307ad02192ac961adf_icgraph.png" border="0" usemap="#classGraphEditor_a7bba6e5db5e539307ad02192ac961adf_icgraph" alt=""/></div>
-<map name="classGraphEditor_a7bba6e5db5e539307ad02192ac961adf_icgraph" id="classGraphEditor_a7bba6e5db5e539307ad02192ac961adf_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="205,5,256,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="a043906e647ecdc4661bf96c8956cc71b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -368,7 +194,7 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -378,7 +204,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGraphEditor_a043906e647ecdc4661bf96c8956cc71b_icgraph.png" border="0" usemap="#classGraphEditor_a043906e647ecdc4661bf96c8956cc71b_icgraph" alt=""/></div>
 <map name="classGraphEditor_a043906e647ecdc4661bf96c8956cc71b_icgraph" id="classGraphEditor_a043906e647ecdc4661bf96c8956cc71b_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="224,5,275,32"/></map>
+<area shape="rect" id="node2" href="classGraphEditor.html#a8686d8ba10ca433e6f263cbf9a4a14ad" title="GraphEditor::proceed" alt="" coords="225,5,370,32"/><area shape="rect" id="node3" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="419,5,469,32"/></map>
 </div>
 </p>
 
@@ -401,7 +227,7 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -411,7 +237,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGraphEditor_a97841adb8ca1609c3bd7c03d37ae77b5_icgraph.png" border="0" usemap="#classGraphEditor_a97841adb8ca1609c3bd7c03d37ae77b5_icgraph" alt=""/></div>
 <map name="classGraphEditor_a97841adb8ca1609c3bd7c03d37ae77b5_icgraph" id="classGraphEditor_a97841adb8ca1609c3bd7c03d37ae77b5_icgraph">
-<area shape="rect" id="node2" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="240,5,291,32"/></map>
+<area shape="rect" id="node2" href="classGraphEditor.html#a8686d8ba10ca433e6f263cbf9a4a14ad" title="GraphEditor::proceed" alt="" coords="241,5,386,32"/><area shape="rect" id="node3" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="435,5,485,32"/></map>
 </div>
 </p>
 
@@ -441,8 +267,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a5ed90e813760d5ea36e6e3f302f381cd"></a>
+<a class="anchor" id="a8686d8ba10ca433e6f263cbf9a4a14ad"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -450,7 +275,50 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classMyView.html">MyView</a>* GraphEditor::canvas</td>
+          <td class="memname">void GraphEditor::proceed </td>
+          <td>(</td>
+          <td class="paramtype">std::queue&lt; <a class="el" href="graph__editor_8h.html#a5667b805d857c6d28f83f6038a0272d3">Event</a> &gt;&#160;</td>
+          <td class="paramname"><em>events</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGraphEditor_a8686d8ba10ca433e6f263cbf9a4a14ad_cgraph.png" border="0" usemap="#classGraphEditor_a8686d8ba10ca433e6f263cbf9a4a14ad_cgraph" alt=""/></div>
+<map name="classGraphEditor_a8686d8ba10ca433e6f263cbf9a4a14ad_cgraph" id="classGraphEditor_a8686d8ba10ca433e6f263cbf9a4a14ad_cgraph">
+<area shape="rect" id="node2" href="classGraphEditor.html#a97841adb8ca1609c3bd7c03d37ae77b5" title="GraphEditor::importFromFile" alt="" coords="200,5,387,32"/><area shape="rect" id="node3" href="classGraphEditor.html#a043906e647ecdc4661bf96c8956cc71b" title="GraphEditor::exportToFile" alt="" coords="208,56,379,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGraphEditor_a8686d8ba10ca433e6f263cbf9a4a14ad_icgraph.png" border="0" usemap="#classGraphEditor_a8686d8ba10ca433e6f263cbf9a4a14ad_icgraph" alt=""/></div>
+<map name="classGraphEditor_a8686d8ba10ca433e6f263cbf9a4a14ad_icgraph" id="classGraphEditor_a8686d8ba10ca433e6f263cbf9a4a14ad_icgraph">
+<area shape="rect" id="node2" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="200,5,251,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a3ebbb608d8ffc1ba3808a7124ca9a22e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classMyView.html">MyView</a>&gt; GraphEditor::canvas</td>
         </tr>
       </table>
   </td>
@@ -462,7 +330,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a4840c87dbdf171efa657810ccd236f02"></a>
+<a class="anchor" id="ab665fb6ff7b93862c6db268d280ca95f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -470,7 +338,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classAbstractModel.html">AbstractModel</a>* GraphEditor::model</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classAbstractModel.html">AbstractModel</a>&gt; GraphEditor::model</td>
         </tr>
       </table>
   </td>

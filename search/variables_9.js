@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x',['x',['../classCoord.html#a696eaa744360fc791d0e3b331c549dbe',1,'Coord']]]
+  ['width',['width',['../classLine.html#a24f657d16d22898489eab05b766c9ead',1,'Line']]]
 ];

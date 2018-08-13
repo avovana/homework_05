@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,22 +84,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">graph_editor.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="object_8h_source.html">object.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="graph__object_8h_source.html">graph_object.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="view_8h_source.html">view.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="model_8h_source.html">model.h</a>&quot;</code><br/>
 <code>#include &lt;vector&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;memory&gt;</code><br/>
+<code>#include &lt;queue&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for graph_editor.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="graph__editor_8h__incl.png" border="0" usemap="#include_2graph__editor_8h" alt=""/></div>
 <map name="include_2graph__editor_8h" id="include_2graph__editor_8h">
-<area shape="rect" id="node2" href="object_8h.html" title="object.h" alt="" coords="7,155,75,181"/><area shape="rect" id="node4" href="view_8h.html" title="view.h" alt="" coords="57,80,116,107"/><area shape="rect" id="node5" href="model_8h.html" title="model.h" alt="" coords="141,80,208,107"/></map>
+<area shape="rect" id="node2" href="graph__object_8h.html" title="graph_object.h" alt="" coords="5,155,112,181"/><area shape="rect" id="node4" href="view_8h.html" title="view.h" alt="" coords="291,80,351,107"/><area shape="rect" id="node7" href="model_8h.html" title="model.h" alt="" coords="97,80,164,107"/><area shape="rect" id="node6" href="painter_8h.html" title="painter.h" alt="" coords="312,155,384,181"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -115,7 +118,56 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGraphEditor.html">GraphEditor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a5667b805d857c6d28f83f6038a0272d3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="graph__editor_8h.html#a5667b805d857c6d28f83f6038a0272d3">Event</a> { <br/>
+&#160;&#160;<a class="el" href="graph__editor_8h.html#a5667b805d857c6d28f83f6038a0272d3aa14a3f6ea4198632c3e25f65d397e2b2">Event::drawLine</a>, 
+<a class="el" href="graph__editor_8h.html#a5667b805d857c6d28f83f6038a0272d3a9a821ad187795c08a1726c54ed55e8e0">Event::drawCircle</a>, 
+<a class="el" href="graph__editor_8h.html#a5667b805d857c6d28f83f6038a0272d3a305b6b462be4c2151e6243d1a4f1d2cd">Event::deleteLast</a>, 
+<a class="el" href="graph__editor_8h.html#a5667b805d857c6d28f83f6038a0272d3a13c9c47930922a4d2c432dc70ccab8dc">Event::importFromFile</a>, 
+<br/>
+&#160;&#160;<a class="el" href="graph__editor_8h.html#a5667b805d857c6d28f83f6038a0272d3ab737f7ad2e614176b28254541d863320">Event::exportToFile</a>, 
+<a class="el" href="graph__editor_8h.html#a5667b805d857c6d28f83f6038a0272d3adbd73c2b545209688ed794c0d5413d5a">Event::quit</a>
+<br/>
+ }</td></tr>
+<tr class="separator:a5667b805d857c6d28f83f6038a0272d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a5667b805d857c6d28f83f6038a0272d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="graph__editor_8h.html#a5667b805d857c6d28f83f6038a0272d3">Event</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a5667b805d857c6d28f83f6038a0272d3aa14a3f6ea4198632c3e25f65d397e2b2"></a>drawLine</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a5667b805d857c6d28f83f6038a0272d3a9a821ad187795c08a1726c54ed55e8e0"></a>drawCircle</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a5667b805d857c6d28f83f6038a0272d3a305b6b462be4c2151e6243d1a4f1d2cd"></a>deleteLast</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a5667b805d857c6d28f83f6038a0272d3a13c9c47930922a4d2c432dc70ccab8dc"></a>importFromFile</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a5667b805d857c6d28f83f6038a0272d3ab737f7ad2e614176b28254541d863320"></a>exportToFile</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a5667b805d857c6d28f83f6038a0272d3adbd73c2b545209688ed794c0d5413d5a"></a>quit</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

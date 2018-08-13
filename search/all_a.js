@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['object_2eh',['object.h',['../object_8h.html',1,'']]],
-  ['objects',['objects',['../classAbstractModel.html#a6eaf503507a4acb97eb3ae7e10bfd6b3',1,'AbstractModel']]],
-  ['operator_3d',['operator=',['../classGraphEditor.html#a13597b9210e1be59e3f8e97f6ac6a067',1,'GraphEditor']]]
+  ['notify',['notify',['../classAbstractModel.html#aceb0dbfa5d82c44b5f65c05d0b08465f',1,'AbstractModel::notify()'],['../classMyModel.html#a853bd817017e87f8577279a5f1c8a485',1,'MyModel::notify()']]]
 ];

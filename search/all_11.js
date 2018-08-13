@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['x',['x',['../classCoord.html#a696eaa744360fc791d0e3b331c549dbe',1,'Coord']]]
+  ['view_2ecpp',['view.cpp',['../view_8cpp.html',1,'']]],
+  ['view_2eh',['view.h',['../view_8h.html',1,'']]]
 ];

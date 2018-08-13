@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['canvas',['canvas',['../classGraphEditor.html#a5ed90e813760d5ea36e6e3f302f381cd',1,'GraphEditor']]],
-  ['centr',['centr',['../classCircle.html#a7dbe0a9c620c42ddabfd3672033355af',1,'Circle']]]
+  ['brushtype',['brushType',['../classPainter.html#a4a3c060c1f733fe12fee0ad3c66e51a6',1,'Painter']]],
+  ['brushwidth',['brushWidth',['../classPainter.html#aa4a773e09ef4fa7c30775990ee5505c9',1,'Painter']]]
 ];

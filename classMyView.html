@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,30 +96,29 @@ Inheritance diagram for MyView:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMyView__inherit__graph.png" border="0" usemap="#MyView_inherit__map" alt="Inheritance graph"/></div>
 <map name="MyView_inherit__map" id="MyView_inherit__map">
-<area shape="rect" id="node2" href="classAbstractView.html" title="{AbstractView\n||+ setModel()\l+ drawElements()\l}" alt="" coords="5,6,131,98"/></map>
+<area shape="rect" id="node2" href="classAbstractView.html" title="{AbstractView\n||+ setModel()\l+ drawElements()\l}" alt="" coords="35,147,160,239"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for MyView:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMyView__coll__graph.png" border="0" usemap="#MyView_coll__map" alt="Collaboration graph"/></div>
 <map name="MyView_coll__map" id="MyView_coll__map">
-<area shape="rect" id="node2" href="classAbstractView.html" title="{AbstractView\n||+ setModel()\l+ drawElements()\l}" alt="" coords="44,686,169,778"/><area shape="rect" id="node3" href="classAbstractModel.html" title="{AbstractModel\n||+ addElement()\l+ deleteLast()\l+ subscribe()\l+ notify()\l+ ~AbstractModel()\l}" alt="" coords="194,664,328,800"/><area shape="rect" id="node6" href="classGraphObj.html" title="{GraphObj\n||+ draw()\l+ ~GraphObj()\l}" alt="" coords="5,147,109,239"/><area shape="rect" id="node7" title="STL class. " alt="" coords="134,155,273,232"/><area shape="rect" id="node9" title="STL class. " alt="" coords="254,264,369,341"/></map>
+<area shape="rect" id="node2" href="classAbstractView.html" title="{AbstractView\n||+ setModel()\l+ drawElements()\l}" alt="" coords="35,165,160,257"/><area shape="rect" id="node4" href="classPainter.html" title="{Painter\n|&#45; color\l&#45; brushType\l&#45; brushWidth\l|+ draw()\l+ draw()\l}" alt="" coords="184,150,280,271"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa9253127deb17384b6ffe9cbc6680bae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyView.html#aa9253127deb17384b6ffe9cbc6680bae">setModel</a> (<a class="el" href="classAbstractModel.html">AbstractModel</a> *model_) override</td></tr>
-<tr class="separator:aa9253127deb17384b6ffe9cbc6680bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c1a86840f1b83cf8a170ce08bf67c07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyView.html#a5c1a86840f1b83cf8a170ce08bf67c07">setModel</a> (std::shared_ptr&lt; <a class="el" href="classAbstractModel.html">AbstractModel</a> &gt; <a class="el" href="classMyView.html#a7cf50f1d3d42f737169766f0d39ed38e">model</a>) override</td></tr>
+<tr class="separator:a5c1a86840f1b83cf8a170ce08bf67c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29cdfb54e72287854688ae41f58689fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyView.html#a29cdfb54e72287854688ae41f58689fc">drawElements</a> () override</td></tr>
 <tr class="separator:a29cdfb54e72287854688ae41f58689fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a1e604061a3dda356e1dfdba2273e2678"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAbstractModel.html">AbstractModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyView.html#a1e604061a3dda356e1dfdba2273e2678">model</a></td></tr>
-<tr class="separator:a1e604061a3dda356e1dfdba2273e2678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="memitem:a7cf50f1d3d42f737169766f0d39ed38e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classAbstractModel.html">AbstractModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyView.html#a7cf50f1d3d42f737169766f0d39ed38e">model</a></td></tr>
+<tr class="separator:a7cf50f1d3d42f737169766f0d39ed38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12029bff41115593ec9637ed33d81647"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPainter.html">Painter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyView.html#a12029bff41115593ec9637ed33d81647">painter</a></td></tr>
+<tr class="separator:a12029bff41115593ec9637ed33d81647"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a29cdfb54e72287854688ae41f58689fc"></a>
@@ -147,7 +146,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa9253127deb17384b6ffe9cbc6680bae"></a>
+<a class="anchor" id="a5c1a86840f1b83cf8a170ce08bf67c07"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -157,8 +156,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void MyView::setModel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classAbstractModel.html">AbstractModel</a> *&#160;</td>
-          <td class="paramname"><em>model_</em></td><td>)</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classAbstractModel.html">AbstractModel</a> &gt;&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -169,21 +168,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classAbstractView.html#aa47b338286f4b657164d56ed50c4c9f4">AbstractView</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classMyView_aa9253127deb17384b6ffe9cbc6680bae_cgraph.png" border="0" usemap="#classMyView_aa9253127deb17384b6ffe9cbc6680bae_cgraph" alt=""/></div>
-<map name="classMyView_aa9253127deb17384b6ffe9cbc6680bae_cgraph" id="classMyView_aa9253127deb17384b6ffe9cbc6680bae_cgraph">
-<area shape="rect" id="node2" href="classAbstractModel.html#abb38403bca6700773e5ecb3361823849" title="AbstractModel::subscribe" alt="" coords="184,5,355,32"/></map>
-</div>
-</p>
+<p>Implements <a class="el" href="classAbstractView.html#ab316ddc9bc04778edfce3860cee6d2e5">AbstractView</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a1e604061a3dda356e1dfdba2273e2678"></a>
+<a class="anchor" id="a7cf50f1d3d42f737169766f0d39ed38e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -191,7 +181,27 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classAbstractModel.html">AbstractModel</a>* MyView::model</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classAbstractModel.html">AbstractModel</a>&gt; MyView::model</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a12029bff41115593ec9637ed33d81647"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPainter.html">Painter</a> MyView::painter</td>
         </tr>
       </table>
   </td>

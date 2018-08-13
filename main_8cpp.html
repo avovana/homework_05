@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,14 +89,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">main.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;vector&gt;</code><br/>
+<div class="textblock"><code>#include &lt;queue&gt;</code><br/>
 <code>#include &quot;<a class="el" href="graph__editor_8h_source.html">graph_editor.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#src_2main_8cpp" alt=""/></div>
 <map name="src_2main_8cpp" id="src_2main_8cpp">
-<area shape="rect" id="node3" href="graph__editor_8h.html" title="graph_editor.h" alt="" coords="189,80,293,107"/><area shape="rect" id="node4" href="object_8h.html" title="object.h" alt="" coords="7,229,75,256"/><area shape="rect" id="node6" href="view_8h.html" title="view.h" alt="" coords="171,155,231,181"/><area shape="rect" id="node7" href="model_8h.html" title="model.h" alt="" coords="79,155,147,181"/></map>
+<area shape="rect" id="node3" href="graph__editor_8h.html" title="graph_editor.h" alt="" coords="157,80,261,107"/><area shape="rect" id="node4" href="graph__object_8h.html" title="graph_object.h" alt="" coords="376,229,483,256"/><area shape="rect" id="node6" href="view_8h.html" title="view.h" alt="" coords="86,155,145,181"/><area shape="rect" id="node9" href="model_8h.html" title="model.h" alt="" coords="273,155,340,181"/><area shape="rect" id="node8" href="painter_8h.html" title="painter.h" alt="" coords="67,229,139,256"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -123,7 +123,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
 <map name="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
-<area shape="rect" id="node2" href="classGraphEditor.html#a7bba6e5db5e539307ad02192ac961adf" title="GraphEditor::drawLine" alt="" coords="122,5,273,32"/><area shape="rect" id="node4" href="classGraphEditor.html#ab7380a13241c547a1a564e4e2511b5c7" title="GraphEditor::drawCircle" alt="" coords="117,56,278,83"/><area shape="rect" id="node5" href="classGraphEditor.html#afb0de65407affd06f2b3ca668b1feb5b" title="GraphEditor::deleteLast" alt="" coords="118,107,277,133"/><area shape="rect" id="node7" href="classGraphEditor.html#a043906e647ecdc4661bf96c8956cc71b" title="GraphEditor::exportToFile" alt="" coords="112,157,283,184"/><area shape="rect" id="node8" href="classGraphEditor.html#a97841adb8ca1609c3bd7c03d37ae77b5" title="GraphEditor::importFromFile" alt="" coords="104,208,291,235"/><area shape="rect" id="node3" href="classAbstractModel.html#a7e58bc186eb00ccdb2a8be2bae99420a" title="AbstractModel::addElement" alt="" coords="339,31,522,57"/><area shape="rect" id="node6" href="classAbstractModel.html#aa7a9b9fa38c0204f0a6588830141b7a4" title="AbstractModel::deleteLast" alt="" coords="343,107,518,133"/></map>
+<area shape="rect" id="node2" href="classGraphEditor.html#a8686d8ba10ca433e6f263cbf9a4a14ad" title="GraphEditor::proceed" alt="" coords="105,31,250,57"/><area shape="rect" id="node3" href="classGraphEditor.html#a97841adb8ca1609c3bd7c03d37ae77b5" title="GraphEditor::importFromFile" alt="" coords="299,5,485,32"/><area shape="rect" id="node4" href="classGraphEditor.html#a043906e647ecdc4661bf96c8956cc71b" title="GraphEditor::exportToFile" alt="" coords="307,56,477,83"/></map>
 </div>
 </p>
 

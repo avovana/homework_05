@@ -1,0 +1,9 @@
+<map id="include/painter.h" name="include/painter.h">
+<area shape="rect" id="node2" href="$view_8h.html" title="include/view.h" alt="" coords="189,80,293,107"/>
+<area shape="rect" id="node7" href="$graph__object_8cpp.html" title="include/graph_object.cpp" alt="" coords="318,80,484,107"/>
+<area shape="rect" id="node8" href="$painter_8cpp.html" title="include/painter.cpp" alt="" coords="509,80,639,107"/>
+<area shape="rect" id="node3" href="$graph__editor_8h.html" title="include/graph_editor.h" alt="" coords="4,155,152,181"/>
+<area shape="rect" id="node5" href="$model_8cpp.html" title="include/model.cpp" alt="" coords="178,155,304,181"/>
+<area shape="rect" id="node6" href="$view_8cpp.html" title="include/view.cpp" alt="" coords="329,155,447,181"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="30,229,127,256"/>
+</map>

@@ -1,4 +1,4 @@
 <map id="Line" name="Line">
-<area shape="rect" id="node2" href="$classGraphObj.html" title="{GraphObj\n||+ draw()\l+ ~GraphObj()\l}" alt="" coords="5,6,109,98"/>
-<area shape="rect" id="node3" href="$classCoord.html" title="{Coord\n|&#45; x\l&#45; y\l|+ Coord()\l}" alt="" coords="133,6,209,98"/>
+<area shape="rect" id="node2" href="$classGraphObj.html" title="{GraphObj\n||+ drawBy()\l+ ~GraphObj()\l}" alt="" coords="5,6,109,98"/>
+<area shape="rect" id="node3" href="$classCoord.html" title="{Coord\n|+ x\l+ y\l|+ Coord()\l}" alt="" coords="133,6,209,98"/>
 </map>

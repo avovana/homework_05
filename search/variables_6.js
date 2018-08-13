@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['subs',['subs',['../classMyModel.html#ac46ccaadb0fcebf7aaee7738ba39b875',1,'MyModel']]]
+  ['radius',['radius',['../classCircle.html#acd5ad47b02e23e33cc8ce0d8ba9559c2',1,'Circle']]]
 ];
