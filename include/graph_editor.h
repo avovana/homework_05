@@ -16,7 +16,7 @@ class GraphEditor
     explicit GraphEditor(const std::string & name_) : projectName{ name_ }
     {
         model = std::make_shared<MyModel>();
-        canvas = std::make_unique<MyView>();
+        canvas = std::make_shared<MyView>();
         canvas->setModel(model);
     }
 
@@ -75,7 +75,7 @@ class GraphEditor
     }
 
     std::string projectName{""};
-    std::unique_ptr<MyView> canvas;
+    std::shared_ptr<MyView> canvas;
     std::shared_ptr<AbstractModel> model;
 
     GraphEditor (const GraphEditor&) = delete;

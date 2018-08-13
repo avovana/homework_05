@@ -14,13 +14,14 @@ void MyModel::deleteLast() {
 	notify();
 }
 
-void MyModel::subscribe(AbstractView* view) {
+void MyModel::subscribe(std::weak_ptr<AbstractView> view) {
 	subs.push_back(view);
 }
 
 void MyModel::notify() {
-	for (auto sub : subs)
-		sub->drawElements();
+	for (auto ptr : subs)
+		if(auto sub = ptr.lock())
+			sub->drawElements();
 }
 
 MyModel::ObjectsType MyModel::getObjects() {
