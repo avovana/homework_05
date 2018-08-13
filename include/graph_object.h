@@ -30,7 +30,7 @@ public:
 	size_t radius;
 
 	Circle(Coord centr_, size_t radius_);
-	~Circle() override;
+	~Circle();
 
 	void drawBy(Painter*) override;
 };
@@ -43,7 +43,7 @@ public:
 	size_t width;
 
 	Line(Coord from_, Coord to_);
-	~Line() override;
+	~Line();
 
 	void drawBy(Painter*) override;
 };
